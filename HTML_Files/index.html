@@ -1,12 +1,29 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" scroll-behavior: smooth;>
 <head>
     <meta charset="UTF-8">
     <title>My First Webpage</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9
+        ..40,100..1000&family=Dancing+Script:wght@400..700&family=Playfair+Display:ital,wght@0,400..900;1,
+        400..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,
+        200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
     <style>
         body{
             padding: 30px;
+            font-family: "DM Sans", sans-serif;
+            font-optical-sizing: auto;
+            font-style: normal;
+            scroll-behavior: smooth;    
+            
         }
+        table, th, td {
+             border: 1px solid black;
+            border-radius: 10px;
+            padding: 5px;
+        }
+        
         .heroSection{
             display: flex;
             justify-content: space-between;
@@ -26,8 +43,23 @@
     </style>
 </head>
 <body>
+    
     <div class="heroSection">
         <div>
+        <h4>table of contents</h4>
+        <div>
+            <ul type="square">
+                <li><a href="#about">about</a></li>
+                <li><a href="#hobby">Hobbies</a></li>
+                <li><a href="#webs">Websites</a></li>
+                <li><a href="#class">classes</a></li>
+                <li><a href="#layout">Layout</a></li>
+                <li><a href="#feeback">Feebacks</a></li>
+            
+            </ul>
+        </div>
+    </div>
+        <div id="about">
             <h1>Zaki Sadaqatzada</h1>
             <h2>Software Engineering</h2>
             <h3>About Me:</h3>
@@ -43,7 +75,7 @@
         </div>
     </div>
    <div>
-        <div>
+        <div id="hobby">
             <h3>Hobbies</h3>
             <ol>
                 <li>Reading</li>
@@ -51,7 +83,7 @@
                 <li>Traveling</li>
             </ol>
         </div>
-        <div>
+        <div id="webs">
             <h3>Favorite Websites</h3>
             <button>More Info</button><br>
             <div class="orderList">
@@ -66,7 +98,7 @@
         </div>
     </div>
 
-    <h3>Weekly Class Schedule</h3>
+    <h3 id="class">Weekly Class Schedule</h3>
     <table border="2" width=" 900" height="300">
         <thead>
             <tr>
@@ -123,19 +155,18 @@
                 <td>Monday</td>
                 <td>9:00 AM</td>
                 <td>C1.2.123</td>
-
             </tr>
             <tr>
                 <td>Kazakh Language</td>
                 <td>Tuesday</td>
                 <td>10:00 AM</td>
                 <td>C1.2.123</td>
-
             </tr>
+            
         </tbody>
     </table>
     
-    <h3>Two-Column Layout</h3>
+    <h3 id="layout">Two-Column Layout</h3>
     <table border="2"  width=" 900" height="300">
         <tr>
             <th> Main</th>
@@ -156,7 +187,7 @@
          <br>
      <hr>
     <p>My mood today is happy &#128512, excited &#127881, and energetic &#127775.</p>
-    <form>
+    <form id="feeback">
         <label>Name:</label><input type="text" value="zakisadaqatzada"><br>
         <label>Email:</label><input type="email" value="myemail@gmail.com"><br>
         <label>Favorite Color:</label><input type="color" value="#ff0000"><br>
